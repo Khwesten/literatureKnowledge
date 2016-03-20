@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lit"
+    android:orientation="vertical"
+    tools:context=".Question4">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Questão 4"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/question_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:text="São características da obra poética de Vinicius de Moraes, exceto:" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Sua obra é comumente dividida em duas fases: a primeira é transcendental, resultante de sua fé cristã. A segunda é marcada pelos movimentos de aproximação do mundo material." />
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Além de ter demonstrado interesse pela poesia sensual, Vinicius demonstrou também interesse pela poesia social." />
+
+            <RadioButton
+                android:id="@+id/radio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Na década de 60, afastou-se da Literatura e passou a dedicar-se à música, tornando-se o mais conhecido e amado poeta brasileiro." />
+
+            <RadioButton
+                android:id="@+id/radio_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Sua obra poética foi influenciada pelo Simbolismo. Cultivou também uma poesia reflexiva, de fundo filosófico, abordando temas como a transitoriedade da vida." />
+
+            <RadioButton
+                android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="A partir da década de 1940, sua linguagem ficou mais simples, e o verso livre passou a ser mais empregado, tornando a comunicação mais direta e dinâmica." />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

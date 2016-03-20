@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lit"
+    android:orientation="vertical"
+    tools:context=".Question1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Questão 1"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/question_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:text="(FUVEST) Poderíamos sintetizar uma das características do Romantismo pela seguinte aproximação de opostos:" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Aparentemente idealista, foi, na realidade, o primeiro momento do Naturalismo Literário." />
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Cultivando o passado, procurou formas de compreender e explicar o presente." />
+
+            <RadioButton
+                android:id="@+id/radio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Pregando a liberdade formal, manteve-se preso aos modelos legados pelos clássicos." />
+
+            <RadioButton
+                android:id="@+id/radio_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Embora marcado por tendências liberais, opôs-se ao nacionalismo político." />
+
+            <RadioButton
+                android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Voltado para temas nacionalistas, desinteressou-se do elemento exótico, incompatível com a exaltação da pátria." />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

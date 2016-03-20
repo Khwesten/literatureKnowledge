@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lit"
+    android:orientation="vertical"
+    tools:context=".Question2">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Questão 2"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/question_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:text="Sobre Cecília Meireles é INCORRETO afirmar:" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Embora não tenha pertencido diretamente ao chamado “grupo católico carioca”, formado por Jorge de Lima, Murilo Mendes, Ismael Nery, Tristão de Ataíde, entre outros, Cecília Meireles também apresenta em sua obra traços espiritualistas." />
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="A obra de Cecília Meireles caminha em direção à reflexão filosófica e existencial. O espiritualismo e o orientalismo fazem-se presentes na obra da poeta, grande admiradora da cultura oriental." />
+
+            <RadioButton
+                android:id="@+id/radio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Ao lado da escritora Rachel de Queiroz, Cecília Meireles foi uma das primeiras mulheres a conquistar o reconhecimento do valor de sua obra na literatura brasileira." />
+
+            <RadioButton
+                android:id="@+id/radio_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Filiou-se ao Neossimbolismo e, em seus poemas, é possível notar um lirismo conciliado a uma perspectiva bem-humorada da vida." />
+
+            <RadioButton
+                android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Suas poesias denotam certa inclinação para a estética simbolista, embora a poeta não estivesse filiada a nenhum movimento literário." />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

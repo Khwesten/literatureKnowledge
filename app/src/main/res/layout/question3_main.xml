@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/lit"
+    android:orientation="vertical"
+    tools:context=".Question3">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Questão 3"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/question_statement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:text="Paulo Leminski foi um dos poetas mais expressivos de sua geração. Sua obra é marcada pela irreverência e pela descontração poética, elementos que fizeram dele um dos escritores mais populares do Brasil. Sobre Leminski, estão corretas as seguintes proposições, exceto:" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/radio_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Subverteu a forma, brincou com a poesia visual, resgatou o haikai (poemas pequenos, com métrica e moldes orientais) e incorporou elementos da publicidade, da música, do cartum e do humor na construção de uma prosa e poesia marcadas por seu incontestável poder de síntese." />
+
+            <RadioButton
+                android:id="@+id/radio_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Embora a linguagem enxuta, cada palavra na obra de Leminski é repleta de significação e capaz de provocar reflexão e conquistar o leitor." />
+
+            <RadioButton
+                android:id="@+id/radio_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="A gíria, o palavrão e a dicção urbana também são frequentes em sua obra." />
+
+            <RadioButton
+                android:id="@+id/radio_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="Sua poesia é antilírica, presa ao real e direcionada ao intelecto, não às emoções." />
+
+            <RadioButton
+                android:id="@+id/radio_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="10dp"
+                android:text="A prosa de ficção de Leminski inclui os romances Catatau (1976), Agora É que São Elas (1984),  Metaformose (1994) e o livro de contos O Gozo Fabuloso (2004)." />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>
