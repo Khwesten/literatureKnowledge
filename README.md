@@ -1,5 +1,5 @@
 Projeto para curso Android begginers
 
-AGENDA
+Literature knowledge
 
-Adicione usuários com seus respectivos telefones e veja a listagem.
+Abra o projeto com alguma ide (preferencialmente android studio) e rode o projeto, não é preciso nenhum configuração, além de ter um emulador ou celular, para rodar junto.
